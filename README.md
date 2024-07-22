@@ -6,7 +6,7 @@
 | ![조용중](https://avatars.githubusercontent.com/u/156163982?v=4) | ![김나리](https://avatars.githubusercontent.com/u/156163982?v=4) | ![alt text](./docs/img/developzest_icon.jpg) | ![한지웅](https://avatars.githubusercontent.com/u/156163982?v=4) | ![남상이](https://avatars.githubusercontent.com/u/156163982?v=4) |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
 |            [조용중(팀장)](https://github.com/UpstageAILab)             |            [김나리](https://github.com/UpstageAILab)             |            [최윤설](https://github.com/developzest)             |            [한지웅](https://github.com/UpstageAILab)             |            [남상이](https://github.com/UpstageAILab)             |
-|전반적인 의견조율, 전처리와 모델링의 기초코드 제공, 발표 |데이터 결측치 처리, catboost 모델링, 발표자료 |데이터 전처리, EDA, 모델링, 발표자료 |  | EDA, 모델링|                                                          
+|전반적인 의견조율, 전처리와 모델링의 기초코드 제공, 발표 |데이터 결측치 처리, catboost 모델링, 발표자료 |데이터 전처리, EDA, 모델링, 발표자료 |EDA, 기타 모델링 | EDA, 모델링|                                                          
 |                                                                    |
 
 ## 1. Competiton Info
