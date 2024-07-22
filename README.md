@@ -155,3 +155,22 @@ CatBoost의 경우, 범주형 데이터를 자동으로 처리하는 특징이 �
 - [한국은행경제통계시스템](https://ecos.bok.or.kr/#/SearchStat)
 - [Wandb 결과](https://wandb.ai/ml9_regression/re_price_prediction/reports/9---Vmlldzo4NzM2MTM2?accessToken=hz8avuctz0w1z3rgfhml93v9achc4jgusy7sqyp7bg9g4rs3lum3ievzc3lffaky)
 
+## 5. 회고
+
+- 조용중
+    - 
+
+- 김나리
+    - 
+
+- 최윤설
+    - 이번 대회를 통해 '데이터 전처리'와 '도메인 지식'의 중요성을 다시금 깨달을 수 있었습니다.
+    
+        지난 Python EDA 프로젝트 때, 서울시 아파트의 급등 / 급락에 영향을 주는 요인 탐색 시 얻은 인사이트가 많은 도움이 되었고 
+        
+        좋은 모델을 사용해도 데이터 전처리 여부에 따라 모델 성능에 크게 영향을 미치는 것을 확인할 수 있는 대회였습니다.
+
+- 한지웅
+    - 
+
+- 남상이
