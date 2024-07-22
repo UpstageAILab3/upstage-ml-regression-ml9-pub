@@ -3,7 +3,7 @@
 
 ## Team - 클라우드 9 (행복의 절정)
 
-| ![조용중](https://avatars.githubusercontent.com/u/156163982?v=4) | ![김나리](https://avatars.githubusercontent.com/u/156163982?v=4) | ![alt text](./docs/img/developzest_icon.jpg) | ![한지웅](https://avatars.githubusercontent.com/u/156163982?v=4) | ![남상이](https://avatars.githubusercontent.com/u/156163982?v=4) |
+| ![조용중](https://avatars.githubusercontent.com/u/156163982?v=4) | ![alt text](./docs/img/nary_icon.jpg) | ![alt text](./docs/img/developzest_icon.jpg) | ![한지웅](https://avatars.githubusercontent.com/u/156163982?v=4) | ![남상이](https://avatars.githubusercontent.com/u/156163982?v=4) |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
 |            [조용중(팀장)](https://github.com/UpstageAILab)             |            [김나리](https://github.com/UpstageAILab)             |            [최윤설](https://github.com/developzest)             |            [한지웅](https://github.com/wooong1223)             |            [남상이](https://github.com/UpstageAILab)             |
 |전반적인 의견조율, 전처리와 모델링의 기초코드 제공, 발표 |데이터 결측치 처리, catboost 모델링, 발표자료 |데이터 전처리, EDA, 모델링, 발표자료 |EDA, 기타 모델링 | EDA, 모델링|                                                          
@@ -16,9 +16,9 @@
 - House Price Prediction 경진대회는 주어진 데이터를 활용하여 서울의 아파트 실거래가를 효과적으로 예측하는 모델을 개발하는 대회입니다.
 
 ### Timeline
-- 2024년 7월 09일 (화) ~ 7월 14일 (월) - 온라인 수업, 각자 데이터 EDA
+- 2024년 7월 09일 (화) ~ 7월 15일 (월) - 온라인 수업
 - 2024년 7월 15일 (월) - 회의 후, 회의 결과를 바탕으로 데이터 전처리
-- 2024년 7월 16일 (월) - 각자 EDA 및 Feature Engineering
+- 2024년 7월 16일 (화) - 각자 EDA 및 Feature Engineering
 - 2024년 7월 17일 (수) - 최종 데이터셋 설정 및 Modeling
 - 2024년 7월 18일 (목) - Feature Selection 및 Modeling Hyper-parameter tuning
 - 2024년 7월 19일 (금) - 최고 성능 모델 추가 처리 및 최종 제출 기한
@@ -28,13 +28,7 @@
 - 아파트 매매의 맥락에서는 회귀 모델이 실제 거래 가격의 차이를 얼마나 잘 잡아내는지 측정
     ![alt text](./docs/img/image.png)
 
-## 2. Components
-
-### Directory
-
-- _Insert your directory structure_
-
-## 3. Data descrption
+## 2. Data descrption
 
 ### Dataset overview
 
@@ -112,7 +106,7 @@
 3. 이상치 처리
     - '층'의 음수값을 1로 대체
 
-## 4. Modeling
+## 3. Modeling
 ### Simple Model
 
 LightGBM의 경우, 대용량 데이터셋에 대해 빠르게 훈련이 가능하며 결측값을 포함한 데이터를 알아서 처리하고
@@ -136,12 +130,12 @@ CatBoost의 경우, 범주형 데이터를 자동으로 처리하는 특징이 �
      - '동', '도로명' 두가지의 경우로 나누어 실행
  - 전용면적이 큰 곳의 가격에서의 에러가 높음을 인지하고, 60평을 기준으로 데이트를 나누어 모델을 fit한 후, 결과들을 합친 후, Ridge와 같은 선형회귀모델로 결과값을 다시 계산   
 
-## 5. Result
+## 4. Result
 - 위와 같이 여러가지 방법을 시도 했으나, 결과가 가장 좋았던 것은 Simple LightGBM에서 하이퍼파라미터를 튜닝한 모델
 
 - Validation data의 rmse값이 5500~5600대일때 public에서 좋은 결과를 확인
   
-- public에서 가장 낮은 rmse값을 가지는 것은 ???? 후 LightGBM + Hyperparam 모델로 계산한 결과값
+- public에서 가장 낮은 rmse값을 가지는 것은 좌표의 결측치까지 처리 후 LightGBM + Hyperparam 모델로 계산한 결과값
 
 - private에서 가장 낮은 rmse값을 가지는 것은 위에서의 데이터 전처리를 마친 후, LightGBM + Hyperparam 모델로 계산한 결과값 
 
@@ -155,12 +149,9 @@ CatBoost의 경우, 범주형 데이터를 자동으로 처리하는 특징이 �
 - private 2위
 ![alt text](./docs/img/private_LB.png)
 
-## etc
-
-### Meeting Log
-
-- _Insert your meeting log link like Notion or Google Docs_
-
 ### Reference
 
-- _Insert related reference_
+- [서울 열린데이터 광장](https://data.seoul.go.kr/dataList/OA-15818/S/1/datasetView.do)
+- [한국은행경제통계시스템](https://ecos.bok.or.kr/#/SearchStat)
+- [Wandb 결과](https://wandb.ai/ml9_regression/re_price_prediction/reports/9---Vmlldzo4NzM2MTM2?accessToken=hz8avuctz0w1z3rgfhml93v9achc4jgusy7sqyp7bg9g4rs3lum3ievzc3lffaky)
+
