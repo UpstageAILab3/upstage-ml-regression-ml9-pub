@@ -18,7 +18,7 @@ style: |
   h2 { font-size: 40px; margin-top: 0; margin-bottom: 12px; color: black; }
   h3 { font-size: 30px; margin-top: 0; margin-bottom: 10px; color: black; }
   p, li { font-size: 20px; line-height: 1.5; margin-bottom: 8px; color: black; }
-  table { font-size: 18px; }
+  table { font-size: 25px; }
   table img { width: 50px; height: 50px; }
   table th, table td { text-align: center; padding: 5px; color: black; }
   .image-container { max-height: 400px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; background-color: #f8f8f8; }
@@ -26,7 +26,7 @@ style: |
 ---
 
 # Upstage AI Lab 3기 Regression 대회
-## Team 클라우드 9 (행복의 절정)
+## 9조: Team 클라우드 9 (행복의 절정)
 
 ---
 
@@ -44,6 +44,16 @@ style: |
 - **목표**: 서울의 아파트 실거래가 예측 모델 개발
 - **평가 지표**: RMSE (Root Mean Squared Error)
 - **기간**: 2024년 7월 09일 ~ 7월 19일
+
+### Timeline
+- 2024년 7월 09일 (화) ~ 7월 14일 (월) - 온라인 수업, 각자 데이터 EDA
+- 2024년 7월 15일 (월) - 회의 후, 회의 결과를 바탕으로 데이터 전처리
+- 2024년 7월 16일 (월) - 각자 EDA 및 Feature Engineering
+- 2024년 7월 17일 (수) - 최종 데이터셋 설정 및 Modeling
+- 2024년 7월 18일 (목) - Feature Selection 및 Modeling
+
+**Hyper-parameter tuning**
+- 2024년 7월 19일 (금) - 최고 성능 모델 추가 처리 및 최종 제출 기한
 
 ---
 
@@ -81,8 +91,10 @@ style: |
 ## 4. 모델링
 
 ### 사용 모델
-- LightGBM
-- CatBoost
+- RandomForest
+- XGBoost
+- LightGBM (결정모델)
+- CatBoost (앙상블 모델)
 
 ### 주요 기법
 - Feature Importance를 이용한 변수 선택
