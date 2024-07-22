@@ -52,17 +52,20 @@ style: |
 - 2024년 7월 17일 (수) - 최종 데이터셋 설정 및 Modeling
 - 2024년 7월 18일 (목) - Feature Selection 및 Modeling
 
-**Hyper-parameter tuning**
+ ### **Hyper-parameter tuning**
 - 2024년 7월 19일 (금) - 최고 성능 모델 추가 처리 및 최종 제출 기한
 
 ---
 
 ## 2. 데이터 설명
+<br>
 
 ### 학습 데이터
 - 1,118,822개 샘플, 52개 변수
 - 기간: 2007년 1월 1일 ~ 2023년 6월 30일
 - 주요 변수: 시군구, 아파트명, 전용면적, 건축년도 등
+
+<br>
 
 ### 평가 데이터
 - 9,272개 샘플, 51개 변수 (타겟 변수 제외)
@@ -71,12 +74,13 @@ style: |
 ---
 
 ## 3. EDA 및 전처리
+<br>
 
 ### 주요 발견사항
 - 70% 이상의 결측치를 가진 특성들이 다수
 - '번지', '본번', '부번', '아파트명'의 결측률은 0.2% 이내
 - '전용면적'에 따른 가격에서 이상치 존재
-
+<br>
 ### 전처리 과정
 1. 결측치 처리
    - 서울시 공동주택 아파트 정보 활용
@@ -95,20 +99,22 @@ style: |
 - XGBoost
 - LightGBM (결정모델)
 - CatBoost (앙상블 모델)
-
+<br>
 ### 주요 기법
 - Feature Importance를 이용한 변수 선택
 - K-Fold 교차 검증
 - 하이퍼파라미터 최적화 (wandb, optuna)
 - 앙상블 기법
 
+- [Wandb 결과](https://wandb.ai/ml9_regression/re_price_prediction/reports/9---Vmlldzo4NzM2MTM2?accessToken=hz8avuctz0w1z3rgfhml93v9achc4jgusy7sqyp7bg9g4rs3lum3ievzc3lffaky)
 ---
 
 ## 5. 결과
+<br>
 
 ### 최종 모델
 - LightGBM + 하이퍼파라미터 최적화
-
+<br><br>
 ### 리더보드 순위
 - Public: 5위
 - Private: 2위
